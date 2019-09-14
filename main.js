@@ -8,7 +8,7 @@ const printToDom = (divId, textToPrint) =>
 
   const celsiusButton = document.getElementById("gridRadios1").checked;
   const fahrenheitButton = document.getElementById("gridRadios2").checked;
-  const temp = document.getElementById("number").value;
+  const temp = document.getElementById("inputNumber").value;
  
 
 //Boiler Plate

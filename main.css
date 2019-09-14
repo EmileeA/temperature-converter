@@ -5,9 +5,9 @@ body {
 h1{
     color: #black;
     margin: 1em 5em;
+    text-align: center;
 }
 
-button{
+/* button{
     margin:0 auto;
-    display:block;
-}
+} */

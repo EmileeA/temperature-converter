@@ -13,12 +13,12 @@ The app provides users a tool to convert temperature from one unit of measure to
 
 ## Screenshots
 
-#### Celsius to Fahrenheit:
-![Celsius to Fahrenheit - Blue]()
+#### On Load:
+![Load Screen](https://raw.githubusercontent.com/EmileeA/temperature-converter/master/screenshots/Temp%20-%20On%20load.png)
 
 
-#### Fahrenheit to Celsius:
-![Fahrenheit to Celsius]()
+#### Conversion:
+![Fahrenheit to Celsius](https://raw.githubusercontent.com/EmileeA/temperature-converter/master/screenshots/Temp%20-%20Conversion.png)
 
 
 ## How to Run

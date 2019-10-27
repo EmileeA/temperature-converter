@@ -1,49 +1,33 @@
-# Temperature converter
+# Temp Converter
 
-For this assignment you should be using Bootstrap NO jQuery.
+## Description
 
-## Requirements
+The app provides users a tool to convert temperature from one unit of measure to another unit of measure. A reset button is available to start a new conversion.
 
-Write a program that will convert a temperature from fahrenheit to celsius, or from celsius to fahrenheit.
+## Features
 
-1. In the HTML, have one input field where someone can enter
-  in a temperature.
-2. Create a radio button group where Celsius or Fahrenheit 
-  can be selected as the scale that the number should be 
-  converted to.
-3. Create a block level element that will hold the text of the
-  converted temperature.
-4. Create a button that, when clicked, displays the converted
-  temperature.
-5. Create another button that, when clicked, clears any text
-  in the input field.
-6. Add an event handler to the input field that checks if the 
-  user pressed the enter key, and if that happens, perform
-  the conversion.
-7. If the temperature is greater than 90F/32C the color of 
-  the converted temperature should be red.
-8. If the temperature is less than 32F/0C the color of 
-  the converted temperature should be blue.
-9. For any other temperature, the color should be green.
+- Radio buttons to determine which measurement is needing to be converted
+- Event listeners assigned to convert button
+- Reset button clears all fields
+- Result calculated upon hitting enter key
 
-```js
-const toCelsius =  () => {
+## Screenshots
 
-}
+#### Celsius to Fahrenheit:
+![Celsius to Fahrenheit - Blue]()
 
-const toFahrenheit =  () => {
 
-}
+#### Fahrenheit to Celsius:
+![Fahrenheit to Celsius]()
 
-// Get a reference to the button element in the DOM
-const button = document.getElementById("converter");
 
-// This function should determine which conversion should
-// happen based on which radio button is selected.
-const determineConverter = (e) => {
-  console.log("event", e);
-}
+## How to Run
 
-// Assign a function to be executed when the button is clicked
-button.addEventListener("click", determineConverter);
-```
+- Clone down this project
+- Install http-server from npm
+- At the root of this project run the following command: `hs -p 8888`
+- In your browser navigate to [https://localhost:8888](https://localhost:8888)
+
+## Contributors
+
+[Emilee Mitchell](https://github.com/EmileeA)

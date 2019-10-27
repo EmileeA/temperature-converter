@@ -7,8 +7,8 @@ const temp = document.getElementById("inputNumber");
 const outPut = document.getElementById("outPut");
 
 //getting a reference to all radio buttons
-const celsiusButton = document.getElementById("gridRadios1").checked;
-const fahrenheitButton = document.getElementById("gridRadios2").checked;
+const celsiusButton = document.getElementById("gridRadios1");
+const fahrenheitButton = document.getElementById("gridRadios2");
 
 //print to dom
 const printToDom = (divId, textToPrint) => {
@@ -40,13 +40,15 @@ const toFahrenheit = temp => {
 // happen based on which radio button is selected.
 const determineConverter = e => {
   console.log("event", e, temp.value);
+  console.log("fahrenheit",fahrenheitButton.checked);
+  console.log("celsius",celsiusButton.checked);
 
   const buttonID = e.target.id;
-  console.log(fahrenheitButton);
+  // console.log(fahrenheitButton);
 
-  if (buttonID === "convertBtn" && fahrenheitButton === true) {
+  if (buttonID === "convertBtn" && fahrenheitButton.checked) {
     toFahrenheit(temp.value);
-  } else if (buttonID === "convertBtn" && celsiusButton === true) {
+  } else if (buttonID === "convertBtn" && celsiusButton.checked) {
     toCelsius(temp.value);
   }
 };
@@ -54,18 +56,16 @@ const determineConverter = e => {
 // Assign a function to be executed when the button is clicked
 convertButton.addEventListener("click", determineConverter);
 clearButton.addEventListener("click", clearOutputInput);
-temp.addEventListener("keyup", function(e) {
+document.body.addEventListener("keyup", function(e) {
   console.log(e);
   e.preventDefault();
   e.stopPropagation();
   if (e.keyCode === 13) {
     console.log(e);
-    if (fahrenheitButton === true) {
+    if (fahrenheitButton.checked) {
       toFahrenheit(temp.value);
-      console.log(e);
-    } else if (celsiusButton === true) {
+    } else if (celsiusButton.checked) {
       toCelsius(temp.value);
-      console.log(e);
     }
   }
 });
